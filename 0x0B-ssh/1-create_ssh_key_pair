@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Creates an RSA key pair with the passphrase betty
+
+key_name="school"
+key_bits="4096"
+key_passphrase="betty"
+
+ssh-keygen -f "$key_name" -b "$key_bits" -N "$key_passphrase"
